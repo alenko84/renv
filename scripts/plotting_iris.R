@@ -1,6 +1,8 @@
 # install pckgs and load
 library(dplyr)
 library(ggplot2)
+library(ThemePark)
+
 
 # lets plot some iris data
 data <- iris
@@ -21,4 +23,4 @@ ggplot(data, aes(Sepal.Length, Sepal.Width, color = Species)) +
         theme(panel.grid.minor = element_blank(),
               legend.position = 'top')
       
-ggsave('./figures/iris_lm_species.pdf', height = 5, width = 5)
+ggsave('./figures/iris_lm_species_starwars.pdf', height = 5, width = 5)
